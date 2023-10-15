@@ -35,7 +35,7 @@ t_philo	**init_philo(t_data *data)
 	t_philo	**philos;
 	int		i;
 
-	philos = (t_philo **)malloc(sizeof(t_philo *) * (data->n_of_philo));
+	philos = (t_philo **)malloc(sizeof(t_philo *) * (data->n_of_philo + 1));
 	philos[data->n_of_philo] = NULL;
 	i = 0;
 	while (i < (data->n_of_philo))
